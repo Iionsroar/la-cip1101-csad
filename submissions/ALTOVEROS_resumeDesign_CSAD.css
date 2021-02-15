@@ -8,30 +8,59 @@ body {
 }
 
 h1 {
+  text-align: center;
   font-family: 'Merriweather', 'Times new roman', serif; 
-  letter-spacing: 0.2em;
+  letter-spacing: 0.5em;
 }
 
-h3 {
+h2 {
   font-family: 'Merriweather', Arial, sans-serif; 
   font-variant: small-caps; 
 }
 
-p {
-  line-height: 150%;
-  text-indent: 2.5em;
+h2.a {
+  text-align: center;
 }
 
-mark {
-  background-color: skyblue; 
-  color: white;
+h2.r, ul.r, ol.r {
+  text-align: right;
 }
 
-sup {
-  color: skyblue;
+ul, ol, h2 {
+  padding: 0% 5%;
+}
+
+ul.r {
+  list-style-type: square;
+}
+
+ul.l {
+  list-style-type: none;
 }
 
 ul {
   list-style-type: circle;
 }
 
+p, li {
+  line-height: 150%;
+}
+
+p {
+  padding: 0% 25%;
+  text-indent: 2.5em;
+}
+
+mark.b {
+  background-color: skyblue; 
+  color: white;
+}
+
+h2 {
+  background-color: #eb8d87; 
+  color: white; 
+}
+
+em.b {
+  color: #4eadd2;
+}
