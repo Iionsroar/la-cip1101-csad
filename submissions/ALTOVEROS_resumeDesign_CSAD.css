@@ -6,61 +6,87 @@ body {
   text-align: justify;
   margin-left: 20px;
 }
-
 h1 {
-  text-align: center;
   font-family: 'Merriweather', 'Times new roman', serif; 
-  letter-spacing: 0.5em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.3em;
+  margin-bottom: 1%;
 }
-
 h2 {
   font-family: 'Merriweather', Arial, sans-serif; 
   font-variant: small-caps; 
 }
 
-h2.a {
-  text-align: center;
+
+ul li:hover {
+  letter-spacing: 0.08em;
+  list-style-type: circle;
+}
+ol li:hover {
+  letter-spacing: 0.08em;
 }
 
-h2.r, ul.r, ol.r {
-  text-align: right;
-}
 
-ul, ol, h2 {
+h2, ul, ol, dl {
   padding: 0% 5%;
 }
 
-ul.r {
-  list-style-type: square;
-}
-
-ul.l {
-  list-style-type: none;
-}
-
-ul {
-  list-style-type: circle;
-}
 
 p, li {
   line-height: 150%;
 }
-
 p {
   padding: 0% 25%;
   text-indent: 2.5em;
 }
 
-mark.b {
-  background-color: skyblue; 
-  color: white;
+
+dt {
+  font-weight: bolder;
+}
+dd {
+  margin-bottom: 2%;
+  font-size: 0.8em;
 }
 
-h2 {
+
+li.hover-blue:hover, dl.hover-blue dt:hover {
+  color: #4eadd2;
+  letter-spacing: 0.05em;
+}
+
+
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+
+
+ul.type-circle {
+  list-style-type: circle;
+}
+ul.type-circle li:hover {
+  list-style-type: square;
+}
+ul.type-square {
+  list-style-type: square;
+}
+ul.type-none {
+  list-style-type: none;
+}
+
+
+.red-bg {
   background-color: #eb8d87; 
   color: white; 
 }
-
-em.b {
+.blue {
   color: #4eadd2;
+}
+
+#title {
+  background-color: skyblue; 
+  color: white;
 }
