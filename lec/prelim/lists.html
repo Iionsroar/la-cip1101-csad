@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title></title>
     <style type="text/css">
-    
+        
     </style>
 </head>
 <body>
     <link rel="stylesheet" type="text/css">
     <!--SURNAME, FIRSTNAME-->
     <!--DATE-->
+
     <h1>Welcome to Bulleted List</h1>
     <ul type="circle">
         <li>Sub-topic 1</li>
@@ -55,28 +56,33 @@
 
     <h1>RECITATION</h1>
     <ol type="I">
-      <li>Bulleted List in HTML</li>
-        <ul>
-          <li type="square">Square</li>
-        <ul>
-          <li type="circle">Circle</li>
-        <ul>
-          <li type="disc">Disc</li>
-        </ul></ul></ul>
+        <li>List in HTML</li>
+            <ol type="A">
+              <li>Definition List</li>
+                <ul>
+                  <li type="circle">term</li>
+                  <li type="square">description</li>
+                </ul>
 
-      <li>Ordered List</li>
-        <ol type="A">
-          <li>Letters</li>
-            <ol type="a">
-              <li>lowercase a</li>
-              <li>uppercase A</li>
+              <li>Ordered List</li>
+                <ol type="i">
+                  <li>Start</li>
+                  <li type="a">type</li>
+                    <ol type="a" start="3">
+                      <li>A,a,I,i,1</li>
+                    </ol>
+                </ol>
+
+                <li>Unordered List</li>
+                    <ol type="i" start="2">
+                        <li>type</li>
+                        <ol type="i" start="10">
+                          <li>square, disc, circle</li>
+                        </ol>
+                    </ol>
+
             </ol>
-          <li>Numbers</li>
-            <ol type="square">
-              <li>Roman Numerals</li>
-            </ol>
-        </ol>
-      <li value="10">End of List</li>
+        <li value="10">END</li>
     </ol>
 
 </body>
