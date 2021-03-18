@@ -6,11 +6,106 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body {
+        background-color: #ffffed; 
+        font-family:'Open Sans', Arial, sans-serif; 
+        font-size: 1.25em; 
+        color: #424242; 
+        text-align: justify;
+        margin-left: 20px;
+      }
+      h1 {
+        font-family: 'Merriweather', 'Times new roman', serif; 
+        word-spacing: 0.5em;
+        letter-spacing: 0.3em;
+        margin-bottom: 1%;
+      }
+      h2 {
+        font-family: 'Merriweather', Arial, sans-serif; 
+        font-variant: small-caps; 
+      }
+
+
+      ul li:hover {
+        letter-spacing: 0.08em;
+        list-style-type: circle;
+      }
+      ol li:hover {
+        letter-spacing: 0.08em;
+      }
+
+
+      h2, ul, ol, dl {
+        padding: 0% 5%;
+      }
+
+
+      p, li {
+        line-height: 150%;
+      }
+      p {
+        padding: 0% 25%;
+        text-indent: 2.5em;
+      }
+
+
+      dt {
+        font-weight: bolder;
+      }
+      dd {
+        margin-bottom: 2%;
+        font-size: 0.8em;
+      }
+
+
+      li.hover-blue:hover, dl.hover-blue dt:hover {
+        color: #4eadd2;
+        letter-spacing: 0.05em;
+      }
+
+
+      .center {
+        text-align: center;
+      }
+      .right {
+        text-align: right;
+      }
+
+
+      ul.type-circle {
+        list-style-type: circle;
+      }
+      ul.type-circle li:hover {
+        list-style-type: square;
+      }
+      ul.type-square {
+        list-style-type: square;
+      }
+      ul.type-none {
+        list-style-type: none;
+      }
+
+
+      .red-bg {
+        background-color: #eb8d87; 
+        color: white; 
+      }
+      .blue {
+        color: #4eadd2;
+      }
+
+      #title {
+        background-color: skyblue; 
+        color: white;
+      }
+
+    </style>
 </head>
 <body>
-    <link rel="stylesheet" type="text/css" href="ALTOVEROS_resumeDesign_CSAD.css">
+    <!-- <link rel="stylesheet" type="text/css" href="ALTOVEROS_resumeDesign_CSAD.css"> -->
     <!--ALTOVEROS, LOUIS ANGELO-->
-    <!--February 17, 2021-->
+    <!--March 9, 2021-->
 
       
     <h1><mark id="title"  >&lt;LOUIS ALTOVEROS/&gt;</mark></h1>
@@ -18,8 +113,8 @@
     <h2 class="red-bg center">About Me</h2>
     <p>I am studying at the University of the East - Manila, majoring in Computer Science and I like automating <em class="blue">menial</em> tasks with <em>passion</em>. Occasionally, design ideas would spark and I would write about them or go straight off designing them on any application I can find. I am inclined to impulse programming but when provided with an interesting project, <em class="blue">I plan endlessly</em>. </p>
 
-    <h2 class="red-bg right">Technical IT Skills</h2>
-    <ul class="right type-square">
+    <h2 class="red-bg">Technical IT Skills</h2>
+    <ul class=" type-square">
       <li>Simple web development with frameworks</li>
       <li>Basic automation & scripting with Python</li>
       <li>MS Office & Google Drive</li>
@@ -28,7 +123,7 @@
     </ul>
     <br>
     
-    <h2 class="red-bg">Educational Attainment</h2>
+    <h2 id="education" class="red-bg">Educational Attainment</h2>
     <!-- <ol>
       <li>Elementary</li>
       <li>Junior High</li>
@@ -45,8 +140,8 @@
       <dd>Ferbel School Meycauayan</dd>
     </dl><br>
     
-    <h2 class="red-bg right">Skills, Training, Seminar Attended</h2>
-    <ol class="right">
+    <h2 class="red-bg">Skills, Training, Seminar Attended</h2>
+    <ol>
       <li>Intermediate Python</li>
       <li>Beginner web development</li>
     </ol>
@@ -71,7 +166,9 @@
     <br>
 
 
-
+    <address>
+      <a href="midterm/ALTOVEROS_HOMEPAGE_CSAD.html">Home</a>
+    </address>
 
 
 </body>

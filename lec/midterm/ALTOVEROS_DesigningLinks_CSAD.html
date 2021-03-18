@@ -1,0 +1,54 @@
+<!-- 
+note:
+order of anchor pseudo class in the cascade:
+1 link
+2 hover
+3 active
+ -->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Designing Links in CSS</title>
+    <style type="text/css">
+    	h1 {
+    		font-family: Georgia, serif;
+    		color: navy;
+    		text-align: center;
+    	}
+
+    	a {
+    		background-color: maroon;
+    		font-family: Verdana, serif;
+    		color: white;
+    		text-decoration: none;
+    		padding: 1em 1.5em;
+    	}
+
+    	a:hover {
+    		background-color: #BC544B;
+    		color: black;
+    	}
+
+    	a:active {
+    		background-color: black;
+    	}
+
+    	a:focus {
+    		background-color: black;
+    	}
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css">
+    <!--ALTOVEROS, LOUIS ANGELO-->
+    <!--DATE-->
+    <h1>Styling Links in CSS</h1>
+    Link to <a href="https://www.ue.edu.ph" title="University of the East Website" target="newWin">UE Website</a>	||
+    Link to <a href="https://www.google.com" title="University of the East Website" target="newWin">Google</a>	||
+    Link to <a href="https://www.imdb.com" title="University of the East Website" target="newWin">Movies</a>	||
+
+
+</body>
+</html>
