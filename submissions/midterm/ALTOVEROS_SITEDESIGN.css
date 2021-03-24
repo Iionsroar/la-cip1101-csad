@@ -15,10 +15,10 @@ body {
 	padding: 0;
 }
 /*idea: highlight for links*/
-a {
+a.gen-link {
 	color: #AFCE9C;
 }
-a:hover {
+a.gen-link:hover {
 	text-decoration: none;
 	color: #424242;
 }
@@ -36,6 +36,11 @@ h1#title {
   font-family: 'Merriweather', 'Times new roman', serif; 
   letter-spacing: 0.2em;
   text-align: center;
+}
+
+mark:hover {
+	color: var(--black);
+	background-color: var(--green);
 }
 
 h2 {
