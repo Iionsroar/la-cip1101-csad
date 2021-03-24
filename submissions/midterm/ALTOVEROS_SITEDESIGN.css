@@ -38,6 +38,10 @@ h1#title {
   text-align: center;
 }
 
+h1 {
+  font-family: 'Merriweather', 'Times new roman', serif; 
+}
+
 mark:hover {
 	color: var(--black);
 	background-color: var(--green);
