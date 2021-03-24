@@ -2,102 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>&lt;LOUIS/&gt;: Landing Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
     <style type="text/css">
-        body {
-        background-color: #ffffed; 
-        font-family:'Open Sans', Arial, sans-serif; 
-        font-size: 1.25em; 
-        color: #424242; 
-        text-align: justify;
+      body {
         margin-left: 20px;
+        font-family: 
       }
-      h1 {
-        font-family: 'Merriweather', 'Times new roman', serif; 
-        word-spacing: 0.5em;
-        letter-spacing: 0.3em;
-        margin-bottom: 1%;
-      }
-      h2 {
-        font-family: 'Merriweather', Arial, sans-serif; 
-        font-variant: small-caps; 
-      }
-
-
-      ul li:hover {
-        letter-spacing: 0.08em;
-        list-style-type: circle;
-      }
-      ol li:hover {
-        letter-spacing: 0.08em;
-      }
-
-
-      h2, ul, ol, dl {
-        padding: 0% 5%;
-      }
-
-
-      p, li {
-        line-height: 150%;
-      }
-      p {
-        padding: 0% 25%;
-        text-indent: 2.5em;
-      }
-
-
-      dt {
-        font-weight: bolder;
-      }
-      dd {
-        margin-bottom: 2%;
-        font-size: 0.8em;
-      }
-
-
-      li.hover-blue:hover, dl.hover-blue dt:hover {
-        color: #4eadd2;
-        letter-spacing: 0.05em;
-      }
-
-
-      .center {
-        text-align: center;
-      }
-      .right {
-        text-align: right;
-      }
-
-
-      ul.type-circle {
-        list-style-type: circle;
-      }
-      ul.type-circle li:hover {
-        list-style-type: square;
-      }
-      ul.type-square {
-        list-style-type: square;
-      }
-      ul.type-none {
-        list-style-type: none;
-      }
-
-
-      .red-bg {
-        background-color: #eb8d87; 
-        color: white; 
-      }
-      .blue {
-        color: #4eadd2;
-      }
-
-      #title {
-        background-color: skyblue; 
-        color: white;
-      }
-
-      a {
+      #navbar a {
           background-color: #424242;
           font-family: Verdana, serif;
           color: white;
@@ -105,21 +19,114 @@
           padding: 0.7em 1.2em;
       }
 
-      a:hover {
+      #navbar a:hover {
           background-color: #dddddc;
           color: black;
+      }
+      div#main {
+        margin: 0 auto;
+        width: 100%;
+      }
+      h1, .title {
+        font-family: 'Merriweather', 'Times new roman', serif; 
+      } 
+      #main ul, #main li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+      }
+      #main div {
+        display: inline-block;
+      }
+      img {
+        object-fit: cover;
+      }
+
+      ul#header {
+        list-style-type: none;
       }
     </style>
 </head>
 <body>
-    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="ALTOVEROS_SITEDESIGN.css">
     <!--ALTOVEROS, LOUIS ANGELO-->
     <!--March 16, 2021-->
-    <h1><mark id="title">Louis: Landing Page</mark></h1> <br> <br> <br>
+    <!-- <h1><mark id="title">Louis: Landing Page</mark></h1> <br> <br> <br> -->
 
+    <ul id="navbar">
+        <!-- TODO: give #logo the fanciest font in existence, no hover -->
+        <li id="logo"><a href="">&lt;LOUIS/&gt;</a></li>
+        <li><a href="" class="not-available" title="Under construction" >RSS Feed</a></li>
+        <li><a href="" class="not-available" title="Under construction" >Contact me</a></li>
+        <li><a href="" class="not-available" title="Under construction" >Support me on Ko-Fi</a></li>
+    </ul>
 
-    Link to <a href="../ALTOVEROS_LIFESTORY_CSAD.html">About Me</a> &nbsp; || &nbsp;
-    Link to <a href="../ALTOVEROS_RESUME_CSAD.html">Resume</a>
+    <br>
+    <ul id="header">
+        <li><h1>The Slacker is Given Some Slack</h1></li>
+        <li><p style="width: 95%">Whatever happens when a lazy folk grabs a laptop and goes to work anyway? Totally chaotic.  Excessive creative freedom plus the inclination to do less work yields a half-baked website that is likely slightly lovely in the eyes but can definitely be better..</p></li>
+        <li><a class="not-available" title="Under Construction">Continue Reading...</a></li>
+    </ul> <br>
+
+    <!-- IDEA: 
+        https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_slidetop
+    -->
+    <h2>Explore my pages</h2>
+    <div id="main">
+        <ul>
+            <li>
+                <div class="image-btn">
+                    <img src="../../static/college-and-suit.jpg" alt="Author Profile" height="480px" width="270">
+                    <div class="top-left gradient-overlay"></di v>
+                    <div class="bottom-left title">About Me</div>
+                    <a href="../ALTOVEROS_LIFESTORY_CSAD.html" target="_blank">
+                        <div class="desc-overlay">
+                            <div class="desc-text">About Me</div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="image-btn">
+                    <img src="../../static/whos-been-pulling-every-evil-string-resume-banner.jpg" alt="Author Profile" height="480px" width="270">
+                    <div class="top-left gradient-overlay"></div>
+                    <div class="bottom-left title">Resume</div>
+                    <a href="../ALTOVEROS_RESUME_CSAD.html" target="_blank">
+                        <div class="desc-overlay">
+                            <div class="desc-text">Resume</div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="image-btn">
+                    <img src="../../static/yoasobi-banner.jpg" alt="Author Profile" height="480px" width="270">
+                    <div class="top-left gradient-overlay"></di v>
+                    <div class="bottom-left title">My Beats</div>
+                    <a href="ALTOVEROS_MYBEAT_CSAD.html" target="_blank">
+                        <div class="desc-overlay">
+                            <div class="desc-text">My Beats</div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="image-btn">
+                    <img src="../../static/wandavision-banner.jpg" alt="Author Profile" height="480px" width="270">
+                    <div class="top-left gradient-overlay"></di v>
+                    <div class="bottom-left title">My Kind of Film</div>
+                    <a href="ALTOVEROS_FILM_CSAD.html" target="_blank">
+                        <div class="desc-overlay">
+                            <div class="desc-text">My Kind of Film</div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        
+    </div>
 
 
 </body>

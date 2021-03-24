@@ -1,0 +1,210 @@
+/*IDEAS
+- every "Louis" at the header sections link to the landing page
+- https://www.w3schools.com/css/css3_images.asp
+*/
+
+/*========== Defaults ==========*/
+:root {
+	--black: #424242;
+	--white: #FAFAFA;
+	--green: #AFCE9C;
+	--red: #AA6A5C;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+/*idea: highlight for links*/
+a {
+	color: #AFCE9C;
+}
+a:hover {
+	text-decoration: none;
+	color: #424242;
+}
+
+/*======== Colors ===========*/
+body {
+  background-color: #FAFAFA; 
+  font-family:'Open Sans', Arial, sans-serif; 
+  font-size: 1.25em; 
+  color: #424242; 
+  text-align: justify;
+}
+
+h1#title {
+  font-family: 'Merriweather', 'Times new roman', serif; 
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Merriweather', Arial, sans-serif; 
+  font-variant: small-caps; 
+  text-align: center;
+}
+
+p {
+  line-height: 150%;
+  text-indent: 2.5em;
+}
+
+address {
+  font-size: 1em;
+}
+
+b {
+  font-size: 1.5em; 
+  font-family: 'Times new roman', 'Merriweather', serif;
+}
+
+sup {
+  color: #AA6A5C;
+}
+
+/*================= Navigatin =================*/
+ul#navbar {
+	background-color: #424242;
+	list-style-type: none;
+	margin: 0;
+	padding: 0.69em 0.5em;
+}
+#navbar li {
+	display: inline;
+}
+#navbar li#logo {
+	margin-right: 42%;
+}
+a.not-available {
+	cursor: not-allowed;
+}
+#nav {
+	width: 78%;
+	margin: auto;
+}
+
+/*============ Btn Image Container ===============*/
+div#main {
+	margin: 5% 10%;
+}
+.image-btn {
+	position: relative;
+	color: white;
+	height: 480px;
+	width: 270px;
+}
+.image-btn .bottom-left {
+	position: absolute;
+	left: 2%;
+	bottom: 4%;
+}
+.image-btn .top-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.image-btn .title {
+	font-size: 1.75em;
+}
+.gradient-overlay {
+	height: 480px;
+	width: 270px;
+	background: linear-gradient(0deg, #0008 30%, #fff4 100%);
+}
+.desc-overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: var(--green);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+.image-btn:hover .desc-overlay {
+	bottom: 0;
+	height: 100%;
+}
+.desc-text {
+	font-family: 'Merriweather', Arial, sans-serif; 
+	font-variant: small-caps; 
+	font-size: 2em;
+	line-height: 1em;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+
+/*================ Resume ===================*/
+/*NOTE: severely for refactoring*/
+div#resume ul li:hover {
+	letter-spacing: 0.08em;
+	list-style-type: circle;
+}
+div#resume ol li:hover {
+	letter-spacing: 0.08em;
+}
+div#resume h2,div#resume ul,div#resume ol,div#resume dl {
+	padding: 0% 5%;
+}
+
+p.resume, li {
+	line-height: 150%;
+}
+p.resume {
+	padding: 0% 10%;
+	text-indent: 2.5em;
+}
+
+dt {
+	font-weight: bolder;
+}
+dd {
+	margin-bottom: 2%;
+	font-size: 0.8em;
+}
+
+div#resume li.hover-red:hover, div#resume dl.hover-red dt:hover {
+	color: var(--red);
+	letter-spacing: 0.05em;
+}
+
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
+
+div#resume ul.type-circle {
+	list-style-type: circle;
+}
+div#resume ul.type-circle li:hover {
+	list-style-type: square;
+}
+div#resume ul.type-square {
+	list-style-type: square;
+}
+div#resume ul.type-none {
+	list-style-type: none;
+}
+
+
+.black-bg {
+	background-color: var(--black); 
+	color: white; 
+}
+.red {
+	color: var(--red);
+}
+
+mark {
+	background-color: var(--black); 
+	color: white;
+}

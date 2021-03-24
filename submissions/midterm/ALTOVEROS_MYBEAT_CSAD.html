@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Beats</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <style type="text/css">
+        h3 {
+            margin-bottom: 0px;
+        }
+        div {
+            margin-left: 1%;
+            margin-right: 2%;
+        }
+        #header {
+            margin-top: 3%;
+        }
+        #playlist {
+            margin-top: 2%;
+        }
+        img {
+            float: left;
+
+        }
+        #header li p, #header li h1 {
+            margin-left: 18%;
+        }
+        #header li a {
+            margin-left: 2%;
+        }
+        ul {
+            list-style-type: none;
+        }
+        #header ul {
+            padding-left: 3%;
+        }
+        div.samples {
+            margin: 0 auto;
+            width: 80%;
+        }
+        div.samples li {
+            display: inline;   
+            font-size: 0.9em;
+            margin-right: 2%;
+        }
+        ul.song-desc {
+            display: inline;
+        }
+        ul.sample-list li {
+            display: inline-block;
+        }
+        ul.song-desc li {
+            display: block;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        a {
+            text-decoration: underline;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="ALTOVEROS_SITEDESIGN.css">
+    <!--ALTOVEROS, LOUIS ANGELO-->
+    <!--DATE-->
+
+    <!-- TODO: add sliding animation to preview controls for sample aud -->
+    <div id="header">
+        <img src="../../static/racing-through-the-night.webp" height="250px">
+        <ul>
+            <li><p style="text-transform: uppercase; text-indent: 0; ">Listening Playlist</p></li>
+            <li><h1 style="text-align: left; margin-left: 18%;">My Beats</h1></li>
+            <li><p style="width: 70%">This page is only but a small puzzle piece of one of my life's greatest escape routes. There's plenty to include, and I might have forgotten the beats I used to like and repeat. But the moment's faves are here.</p></li>
+            <li><a title="Under Construction">Shuffle Play</a></li>
+        </ul>
+    </div><hr>
+
+    <div class="samples">
+        <h2>Sample Audio</h2>
+        <ul class="sample-list">
+            <li>
+                <ul class="song-desc">
+                    <li><strong>Song Title:</strong> Racing Into the Night</li>
+                    <li><strong>Artist Name:</strong> YOASOBI</li>
+                    <li><strong>Genre:</strong> J-Pop</li>
+                </ul><br>
+                <audio controls>
+                    <source src="../../static/racing-into-the-night.mp3" type="Audio/mpeg">
+                </audio>                
+            </li>
+            <li>
+                <ul class="song-desc">
+                    <li><strong>Song Title:</strong> Any Song</li>
+                    <li><strong>Artist Name:</strong> Zico</li>
+                    <li><strong>Genre:</strong> K-Pop</li>
+                </ul><br>
+                <audio controls>
+                    <source src="../../static/any-song.mp3" type="Audio/mpeg">
+                </audio>                
+            </li>
+            <li>
+                <ul class="song-desc">
+                    <li><strong>Song Title:</strong> Elevate</li>
+                    <li><strong>Artist Name:</strong> DJ Khalil</li>
+                    <li><strong>Genre:</strong> Hip-Hop/ Rap</li>
+                </ul><br>
+                <audio controls>
+                    <source src="../../static/elevate.mp3" type="Audio/mpeg">
+                </audio>                
+            </li>
+        </ul>
+    </div><br>
+
+    <div id="playlist">
+        <h3>J-Pop</h3>
+        <hr>
+        <ul>
+            <li>Racing Into the Night - YOASOBI</li>
+            <li>Flamingo - Kenshi Yonezu</li>
+            <li>Mayonaka no Door/ Stay With Me - Miki Matsubara</li>
+            <li>Say It. - Yorushika</li>
+            <li>Lemon - Kenshi Yonezu</li>
+            <li>Plastic Love - Mariya Takeuchi</li>
+        </ul>
+        <br>
+
+        <h3>K-Pop</h3>
+        <hr>
+        <ul>
+            <li>Any Song - Zico</li>
+            <li>La Vie En Rose - IZ*ONE</li>
+            <li>Your Dog Loves You - Colde, Crush</li>
+            <li>Psycho - Red Velvet</li>
+            <li>Through the Night - IU</li>
+            <li>Dream - Suzy, Baekhyun</li>
+        </ul>
+        <br>
+
+        <h3>Hip-Hop/ Rap</h3>
+        <hr>
+        <ul>
+            <li>Elevate - DJ Khalil</li>
+            <li>Summerhouse - Kota the Friend</li>
+            <li>Start a Riot - Duckwrth</li>
+            <li>King's Dead - Kendrick Lamar</li>
+            <li>Opps - Vince Staples</li>
+            <li>What's Up Danger - Blackway & Black Caviar</li>
+        </ul>
+        <br>
+    </div>
+
+</body>
+</html>
