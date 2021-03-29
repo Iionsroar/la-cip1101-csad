@@ -91,6 +91,9 @@ a.not-available {
 	width: 78%;
 	margin: auto;
 }
+#nav.photogallery-nav {
+	width: 51%;
+}
 
 /*============ Btn Image Container ===============*/
 div#main {
