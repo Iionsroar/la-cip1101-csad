@@ -1,8 +1,3 @@
-/*IDEAS
-- every "Louis" at the header sections link to the landing page
-- https://www.w3schools.com/css/css3_images.asp
-*/
-
 /*========== Defaults ==========*/
 :root {
 	--black: #424242;
@@ -16,19 +11,19 @@ body {
 }
 /*idea: highlight for links*/
 a.gen-link {
-	color: #AFCE9C;
+	color: var(--green);
 }
 a.gen-link:hover {
 	text-decoration: none;
-	color: #424242;
+	color: var(--black);
 }
 
 /*======== Colors ===========*/
 body {
-  background-color: #FAFAFA; 
+  background-color: var(--white); 
   font-family:'Open Sans', Arial, sans-serif; 
   font-size: 1.25em; 
-  color: #424242; 
+  color: var(--black); 
   text-align: justify;
 }
 
@@ -73,7 +68,7 @@ sup {
 
 /*================= Navigatin =================*/
 ul#navbar {
-	background-color: #424242;
+	background-color: var(--black);
 	list-style-type: none;
 	margin: 0;
 	padding: 0.69em 0.5em;
@@ -154,69 +149,75 @@ div#main {
 
 /*================ Resume ===================*/
 /*NOTE: severely for refactoring*/
-div#resume ul li:hover {
+#resume div ul li:hover {
 	letter-spacing: 0.08em;
 	list-style-type: circle;
 }
-div#resume ol li:hover {
+#resume div ol li:hover {
 	letter-spacing: 0.08em;
 }
-div#resume h2,div#resume ul,div#resume ol,div#resume dl {
+#resume div h2,div#resume ul, #resume div ol, #resume div dl {
 	padding: 0% 5%;
 }
 
-p.resume, li {
+#resume p.resume, li {
 	line-height: 150%;
 }
-p.resume {
+#resume p.resume {
 	padding: 0% 10%;
 	text-indent: 2.5em;
 }
 
-dt {
+#resume dt {
 	font-weight: bolder;
 }
-dd {
+#resume dd {
 	margin-bottom: 2%;
 	font-size: 0.8em;
 }
 
-div#resume li.hover-red:hover, div#resume dl.hover-red dt:hover {
+#resume div li.hover-red:hover, #resume div dl.hover-red dt:hover {
 	color: var(--red);
 	letter-spacing: 0.05em;
 }
 
-.center {
+#resume .center {
 	text-align: center;
 }
-.right {
+#resume .right {
 	text-align: right;
 }
 
 
-div#resume ul.type-circle {
+#resume div ul.type-circle {
 	list-style-type: circle;
 }
-div#resume ul.type-circle li:hover {
+#resume div ul.type-circle li:hover {
 	list-style-type: square;
 }
-div#resume ul.type-square {
+#resume div ul.type-square {
 	list-style-type: square;
 }
-div#resume ul.type-none {
+#resume div ul.type-none {
 	list-style-type: none;
 }
 
-
-.black-bg {
-	background-color: var(--black); 
-	color: white; 
+#resume img {
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
-.red {
+
+#resume .black-bg {
+	background-color: var(--black); 
+	color: var(--white); 
+}
+#resume .red {
 	color: var(--red);
 }
 
+/*=============================*/
+
 mark {
 	background-color: var(--black); 
-	color: white;
+	color: var(--white);
 }
