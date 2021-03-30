@@ -1,0 +1,12 @@
+<img src="filename" usemap="mapping" />
+<map name="mapping">
+	<area shape="" coords="" href="" target="">
+</map>
+
+shape = rect, poly, circle
+rect=upperleft coordinates, lower right coordinates, (x1,y1,x2,y2)
+
+circle=(center x, center-y, x ,radius)
+radius=coordinate of right side-left coordinates/2)
+
+poly=every curves and corners should be plotted.

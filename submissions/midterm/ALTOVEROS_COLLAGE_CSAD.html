@@ -6,8 +6,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        function writeText(txt) {
+            document.getElementById("beautiful-place").innerHTML=txt;
+        }
+        function dissolveText(txt) {
+            document.getElementById("beautiful-place").innerHTML=txt;
+        }
+    </script>
     <style type="text/css">
-    
     </style>
 </head>
 <body>
@@ -15,8 +22,26 @@
     <!--ALTOVEROS, LOUIS ANGELO-->
     <!--March 25, 2021-->
     
+    <h1 id="title"><mark><a style="text-decoration: none; color: white" href="midterm/ALTOVEROS_HOMEPAGE_CSAD.html">&lt;LOUIS ALTOVEROS/&gt;</a></mark></h1>
+
     <!-- https://ue.instructure.com/courses/18869/discussion_topics/108528 -->
     <!-- Five:  Okinawa, Prince Edward Island, Paris,  London, Grand Canyon-->
+    <div align="center">
+        <h1 id="beautiful-place">Five Beautiful Places I Want to Explore</h1>
+        <img id="collage" src="../../static/imagemap/imagemap-collage.png"  usemap="#placesmap">
+
+        <map name="placesmap">
+            <area shape="poly" coords="153,53,183,35,222,27,245,29,254,24,283,32,291,26,324,36,324,79,250,80,157,66" href="ALTOVEROS_IMAGEMAP_CSAD/ALTOVEROS_OKINAWA_CSAD.html" target="newSpace" onMouseOver="writeText('Okinawa, Japan')" onMouseOut="dissolveText('Five Beautiful Places I Want to Explore')">
+
+            <area shape="poly" coords="1,285,8,269,15,285,35,285,35,264,46,268,46,212,56,226,64,193,76,227,79,211,83,273,85,260,106,260,116,217,127,254,126,277,140,275,140,256,192,254,194,276,251,276,249,215,266,170,282,215,283,276,298,285,301,309,283,317,253,309,153,313,116,306,78,316,1,303" href="ALTOVEROS_IMAGEMAP_CSAD/ALTOVEROS_LONDON_CSAD.html" target="newSpace" onMouseOver="writeText('London, England')" onMouseOut="dissolveText('Five Beautiful Places I Want to Explore')">
+            
+            <area shape="poly" coords="154,483,177,345,200,482" href="ALTOVEROS_IMAGEMAP_CSAD/ALTOVEROS_PARIS_CSAD.html" target="newSpace" onMouseOver="writeText('Paris, France')" onMouseOut="dissolveText('Five Beautiful Places I Want to Explore')">
+            
+            <area shape="circle" coords="482,143,115" href="ALTOVEROS_IMAGEMAP_CSAD/ALTOVEROS_CANYON_CSAD.html" target="newSpace" onMouseOver="writeText('Grand Canyon, Arizona')" onMouseOut="dissolveText('Five Beautiful Places I Want to Explore')">
+            
+            <area shape="rect" coords="420,319,649,471" href="ALTOVEROS_IMAGEMAP_CSAD/ALTOVEROS_PEI_CSAD.html" target="newSpace" onMouseOver="writeText('Prince Edward Island, Canada')" onMouseOut="dissolveText('Five Beautiful Places I Want to Explore')">
+        </map>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,35 @@
+Create an image map using the image that can be downloaded using this link: 
+https://www.teachwire.net/news/8-solar-system-facts-to-wow-students
+
+Below are the requirements:
+All image maps should be link to their specific webpage. 
+The webpages below should 
+contain an image and  a short paragraph that floats around it. 
+Use internal /embedded stylesheet for the formatting.
+ 
+1. Apply the rect shape for the planet  Jupiter.You can use the facts 
+in the said link to describe Jupiter. 
+Save file as Surname_Jupiter_section.html
+40,26,152,135
+
+2. Apply the circle shape for the planet Pluto. You may also use the facts 
+in the said link to describe 
+Pluto.Save file as Surname_Pluto_section.html
+198,23
+212-198
+
+3. Apply the poly shape for the planet Saturn. You may use the facts below for Saturn. Save your file as 
+Surname_Saturn_section.html
+291,45,315,35,326,35,332,24,352,16,370,17,389,33,412,41,425,51,410,62,393,65,375,81,356,85,339,78,326,64,299,61,291,53
+
+Saturn isn’t the only planet to have rings, but it definitely has the most beautiful ones. The rings we see are made of groups of tiny ringlets that surround Saturn. They’re made of chunks of ice and rock. Like Jupiter, Saturn is mostly a ball of hydrogen and helium. 
+
+BONUS: Apply the short JavaScript code(can be seen in the recorded lecture) to display a short fun fact about the planet.
+
+Save the overall file as SURNAME_IMAGEMAPS_SECTION.html.  
+Place all  the html files inside SURNAME_HTML_ FOLDER and images folder\
+(SURNAME_IMAGES_ FOLDER) 
+inside the 
+folder SURNAME_IMAGEMAPS_SECTION ZIP FOLDER.  
+
+

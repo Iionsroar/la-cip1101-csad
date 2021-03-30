@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        function writeText(txt) {
+            document.getElementById("desc").innerHTML=txt;
+        }
+        function dissolveText(txt) {
+            document.getElementById("desc").innerHTML=txt;
+        }
+    </script>
+    <style type="text/css">
+        :root {
+            --black: #424242;
+            --white: #FAFAFA;
+            --green: #AFCE9C;
+            --red: #AA6A5C;
+        }
+        body {
+          background-color: var(--white); 
+          font-family:'Open Sans', Arial, sans-serif; 
+          font-size: 1.25em; 
+          color: var(--black); 
+          text-align: justify;
+        }
+
+        h1 {
+          font-family: 'Merriweather', 'Times new roman', serif; 
+          letter-spacing: 0.2em;
+          text-align: center;
+        }
+
+        h1 {
+          font-family: 'Merriweather', 'Times new roman', serif; 
+        }
+    </style>
+</head>
+<body>
+    <!--ALTOVEROS, LOUIS ANGELO-->
+    <!--March 30, 2021-->
+    
+
+    <div align="center">
+        <h1>The Solar System</h1>
+        <img src="../ALTOVEROS_IMAGES_FOLDER/solarsys.jpg"  usemap="#solarsysmap">
+
+        <map name="solarsysmap">
+            <area shape="rect" coords="40,26,152,135" href="ALTOVEROS_JUPITER_CSAD.html" target="newSpace" onMouseOver="writeText('Jupiter is two and a half times more massive than all the other planets in our Solar System combined!')" onMouseOut="dissolveText('')">
+            <area shape="circle" coords="198,23,14" href="ALTOVEROS_PLUTO_CSAD.html" target="newSpace" onMouseOver="writeText('Pluto is the only astronomical body named by an 11-year-old!')" onMouseOut="dissolveText('')">
+            <area shape="poly" coords="291,45,315,35,326,35,332,24,352,16,370,17,389,33,412,41,425,51,410,62,393,65,375,81,356,85,339,78,326,64,299,61,291,53" href="ALTOVEROS_SATURN_CSAD.html" target="newSpace" onMouseOver="writeText('Saturn\'s rings are huge but surprisingly thin!')" onMouseOut="dissolveText('')">
+        </map>
+
+        <p id="desc"></p>
+    </div>
+
+</body>
+</html>
