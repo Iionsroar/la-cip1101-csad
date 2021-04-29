@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sample Table in HTML</title>
+    <style type="text/css">
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 10px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: .3em .7em;
+            text-align: ;
+        }
+        th.left, td.left {
+            text-align: left;
+            vertical-align: bottom;
+        }        
+        td.center {
+            text-align: center;
+        }
+        thead, tfoot {
+            background-color: #6ccfdd;
+            font-weight: bold;
+        }
+        figure, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+        figure {
+            border: 1px solid black;
+            width: 700px;
+            padding: 15px;
+        }
+        figcaption {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            font-size: 120%;
+            padding-bottom: 0.25em;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css">
+
+    <figure>
+        <figcaption>Total Sales by Book</figcaption>
+        <table border="3" width="75%">
+            <thead>
+                <tr>
+                    <th class="left" rowspan="2">Book</th>
+                    <th colspan="4">Sales</th>
+                </tr>
+                <tr>
+                    <th>North</th>
+                    <th>South</th>
+                    <th>West</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="left">PHP and MySQL</td>
+                    <td class="center">$55,382</td>
+                    <td class="center">$73,382</td>
+                    <td class="center">$177,382</td>
+                    <td class="center">$372,381</td>
+                </tr>
+                <tr>
+                    <td class="left">Javascript and jQuery</td>
+                    <td class="center">$28,128</td>
+                    <td class="center">$24,128</td>
+                    <td class="center">$168,128</td>
+                    <td class="center">$305,447</td>
+                </tr>
+                <tr>
+                    <td class="left">Java Programming</td>
+                    <td class="center">$27,120</td>
+                    <td class="center">$39,120</td>
+                    <td class="center">$239,120</td>
+                    <td class="center">$392,444</td>
+                </tr>
+                <tr>
+                    <td class="left">Java Servlets and JSP</td>
+                    <td class="center">$23,952</td>
+                    <td class="center">$24,952</td>
+                    <td class="center">$129,952</td>
+                    <td class="center">$382,123</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th class="left">Sales Totals</th>
+                    <td>$140,775</td>
+                    <td>$165,550</td>
+                    <td>$762,794</td>
+                    <th>$2,154,786</th>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
+
+
+</body>
+</html>

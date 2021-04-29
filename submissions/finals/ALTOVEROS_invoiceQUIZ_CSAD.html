@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form using Tables</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+        table.main  {
+            border: 5px solid #303a6a;
+            border-collapse: collapse;
+            width: 50%;
+            margin: 10px auto;
+            font-family: tahoma;
+            font-size: 1.125em;
+        }
+        table.main thead th {
+            font-weight: normal;
+            background-color: #b4dfe5;
+        }
+        th, td {
+            padding: .3em;
+        }
+        td {
+            border-top: none;
+            border-bottom: none;
+        }
+        table .left {
+            text-align: left;
+        }        
+        table .center {
+            text-align: center;
+        }
+        table .right {
+            text-align: right;
+        }
+        thead th, tfoot td {
+            padding: 0.7em 0.1em;
+        }
+
+        /* =========================================== */
+        thead th {
+            padding: 1.3em 1em;
+        }
+        tr.blue-heading {
+            background-color: #575a89;
+            color: white;
+            border: 1px solid #05386B;
+            font-weight: bold;
+        }
+        tbody tr.blue-heading {
+            border-color: #05386B;
+        }
+        .strong {
+            font-weight: bold;
+        }
+        tbody#invoice .thin-col {
+            width: 2.5em;
+        }
+        tbody#invoice tr:nth-child(even) {
+            background-color: #EDF5E1;
+        }
+        tbody#invoice tr:nth-child(odd):hover, tbody#transaction-details:hover {
+            background-color: #8EE4AF;
+        }
+        tbody#transaction-details td, tbody#invoice td, tfoot td {
+            border-right: 1px solid #05386B4D;
+        }
+        tbody#transaction-details td {
+            padding: 0.1em 0.2em;
+        }
+        tbody#invoice tr:last-child, tbody#invoice tr:nth-last-child(2) {
+            border-top: 1px solid #05386B;
+        }
+
+        /* =========================================== */
+
+        figure, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+        figure {
+            width: 100%;
+            padding: 15px 5px;
+        }
+
+        .main thead tr:last-child {
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css">
+    <!--ALTOVEROS, LOUIS ANGELO-->
+    <!--April 26, 2021-->
+
+    <figure>
+        <figcaption>
+        </figcaption>
+
+        <table class="main" border="3">
+            <thead>
+                <tr>
+                    <th class="center" colspan="4">Invoice Tabular data</th>
+                </tr>
+            </thead>
+
+            <tbody id="transaction-details">
+                <tr class="blue-heading">
+                    <td class="left" colspan="2">Invoice # 123456789</td>
+                    <td class="right" colspan="2">14 January 2025</td>
+                </tr>
+                <tr class="strong">
+                    <td class="left" colspan="2">Pay to: </td>
+                    <td class="left" colspan="2">Customer: </td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="2">Acme Billing Co. </td>
+                    <td class="left" colspan="2">John Smith </td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="2">123 Main St. </td>
+                    <td class="left" colspan="2">321 Willow Way</td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="2">Cityville, NA 12345</td>
+                    <td class="left" colspan="2">Southeast Northwestershire, MA 54321</td>
+                </tr>
+            </tbody>
+
+            <tbody id="invoice">
+                <tr class="blue-heading">
+                    <td class="left">Name/ Description</td>
+                    <td class="left">Qty.</td>
+                    <td class="center thin-col">@</td>
+                    <td class="right">Cost</td>
+                </tr>
+                <tr>
+                    <td class="left">Paperclips</td>
+                    <td class="left">1000</td>
+                    <td class="center thin-col">0.01</td>
+                    <td class="right">10.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Staples (box)</td>
+                    <td class="left">1000</td>
+                    <td class="center thin-col">1.00</td>
+                    <td class="right">100.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Bond Paper (box)</td>
+                    <td class="left">100</td>
+                    <td class="center thin-col">1.00</td>
+                    <td class="right">110.00</td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="3">Subtotal</td>
+                    <td class="right">110.00</td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="2">Tax</td>
+                    <td class="left thin-col">8%</td>
+                    <td class="right">8.80</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr class="blue-heading">
+                    <td class="left" colspan="2">Grand Total</td>
+                    <td class="right" colspan="2" style="font-weight: normal">$ 118.80</td>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
+
+
+</body>
+</html>
+

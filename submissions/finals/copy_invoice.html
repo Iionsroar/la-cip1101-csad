@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form using Tables</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+        table {
+            border: 5px solid #303a6a;
+            border-collapse: collapse;
+            width: 50%;
+            margin: 10px auto;
+            font-family: tahoma;
+            font-size: 1.125em;
+        }
+        table thead th {
+            font-weight: normal;
+            background-color: #b4dfe5;
+        }
+        th, td {
+            padding: .3em;
+        }
+        td {
+            border-top: none;
+            border-bottom: none;
+        }
+        table .left {
+            text-align: left;
+        }        
+        table .center {
+            text-align: center;
+        }
+        table .right {
+            text-align: right;
+        }
+        thead th, tfoot td {
+            padding: 0.7em 0.1em;
+        }
+
+        /* =========================================== */
+        thead th {
+            padding: 1.3em 1em;
+        }
+        tr.head {
+            background-color: #575a89;
+            color: white;
+            border: 1px solid #05386B;
+            font-weight: bold;
+        }
+        tbody tr.head {
+            border-color: #05386B;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        tbody#receipt tr:nth-child(even) {
+            background-color: #EDF5E1;
+        }
+        tbody#receipt tr:nth-child(odd):hover {
+            background-color: #8EE4AF;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css">
+
+    <figure>
+        <figcaption>
+        </figcaption>
+
+        <table border="3">
+            <thead>
+                <tr>
+                    <th class="center" colspan="4">Invoice Tabular data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="head">
+                    <td class="left" colspan="2">Invoice # 123456789</td>
+                    <td class="right" colspan="2">14 January 2025</td>
+                </tr>
+                <tr class="bold">
+                    <td class="left" colspan="2">Pay to: </td>
+                    <td class="left" colspan="2">Customer: </td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="2">Acme Billing Co. </td>
+                    <td class="left" colspan="2">John Smith </td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="2">123 Main St. </td>
+                    <td class="left" colspan="2">321 Willow Way</td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="2">Cityville, NA 12345</td>
+                    <td class="left" colspan="2">Southeast Northwestershire, MA 54321</td>
+                </tr>
+            </tbody>
+
+            <tbody id="receipt">
+                <tr class="head">
+                    <td class="left">Name/ Description</td>
+                    <td class="left">Qty.</td>
+                    <td class="center">@</td>
+                    <td class="right">Cost</td>
+                </tr>
+                <tr>
+                    <td class="left">Paperclips</td>
+                    <td class="left">1000</td>
+                    <td class="center">0.01</td>
+                    <td class="right">10.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Staples (box)</td>
+                    <td class="left">1000</td>
+                    <td class="center">1.00</td>
+                    <td class="right">100.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Bond Paper (box)</td>
+                    <td class="left">100</td>
+                    <td class="center">1.00</td>
+                    <td class="right">110.00</td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="3">Subtotal</td>
+                    <td class="right">110.00</td>
+                </tr>
+                <tr>
+                    <td class="left" colspan="2">Tax</td>
+                    <td class="left">8%</td>
+                    <td class="right">8.80</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr class="head">
+                    <td class="left" colspan="2">Grand Total</td>
+                    <td class="right" colspan="2">$ 118.80</td>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
+
+
+</body>
+</html>
+

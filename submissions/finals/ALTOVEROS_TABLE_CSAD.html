@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sample Table in HTML</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <style type="text/css">
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 10px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: .3em .7em;
+            text-align: ;
+        }
+        th.left, td.left {
+            text-align: left;
+            vertical-align: bottom;
+        }        
+        td.center {
+            text-align: center;
+        }
+        thead, tfoot {
+            background-color: #6ccfdd;
+            font-weight: bold;
+        }
+        figure, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+        figure {
+            border: 1px solid black;
+            width: 900px;
+            padding: 15px;
+        }
+        figcaption {
+            font-family: 'Merriweather';
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            font-size: 120%;
+            padding-bottom: 0.25em;
+        }
+
+
+        thead, tfoot {
+            font-size: 1.1em;
+            font-family: 'Merriweather';
+        }
+        tbody {
+            font-family: 'Open Sans';
+        }
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css">
+    <!--ALTOVEROS, LOUIS ANGELO-->
+    <!--April 20, 2021-->
+
+    <figure>
+        <figcaption>Total Sales by Book</figcaption>
+        <table border="3" width="75%">
+            <thead>
+                <tr>
+                    <th class="left" rowspan="2">Book</th>
+                    <th colspan="4">Sales</th>
+                </tr>
+                <tr>
+                    <th>North</th>
+                    <th>South</th>
+                    <th>West</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="left">PHP and MySQL</td>
+                    <td class="center">$55,114</td>
+                    <td class="center">$73,114</td>
+                    <td class="center">$177,114</td>
+                    <td class="center">$372,381</td>
+                </tr>
+                <tr>
+                    <td class="left">Javascript and jQuery</td>
+                    <td class="center">$28,115</td>
+                    <td class="center">$24,115</td>
+                    <td class="center">$168,115</td>
+                    <td class="center">$305,447</td>
+                </tr>
+                <tr>
+                    <td class="left">Java Programming</td>
+                    <td class="center">$27,111</td>
+                    <td class="center">$39,111</td>
+                    <td class="center">$239,111</td>
+                    <td class="center">$392,444</td>
+                </tr>
+                <tr>
+                    <td class="left">Java Servlets and JSP</td>
+                    <td class="center">$23,114</td>
+                    <td class="center">$24,114</td>
+                    <td class="center">$129,114</td>
+                    <td class="center">$382,123</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th class="left">Sales Totals</th>
+                    <td>$140,775</td>
+                    <td>$165,550</td>
+                    <td>$762,794</td>
+                    <th>$2,154,786</th>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
+
+
+</body>
+</html>
