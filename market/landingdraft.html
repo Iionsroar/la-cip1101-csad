@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Landing Page</title>
+	<style type="text/css">
+		
+		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+		body {
+			margin: 0;
+			font-family: Roboto, sans-serif;
+			font-weight: 100;
+			font-size: 1em;
+			background-color: #ecf0f1;
+			
+		}
+
+		/* nav */
+		.nav {
+			display: block;
+			position: relative;
+			background-color: #2f2f2f;
+			color: #FFF;
+			box-shadow: 5px 0 10px 5px black;
+			padding: 30px 0;
+		}
+
+		.nav-container {
+			display:block;
+			position: relative;
+			width: 1200px;
+			margin: auto;
+		}
+
+		.logo {
+			width: 50px;
+			padding-right: 10px;
+		}
+
+		.logo-name {
+			font-family: 'Playfair Display', serif;
+			font-weight: 800;
+			font-size: 3em;
+		}
+
+		/* nav links */
+		ul.nav-list {
+			display: inline-block;
+			margin-left: auto;
+			list-style: none;
+		}
+
+		ul.nav-list li{
+			display: inline-block;
+			margin-left: 50px;
+		}
+
+		ul.nav-list li a:link{
+			text-transform: capitalize;
+			font-size: 1.25em;
+			text-decoration: none;
+			color: #FFF;
+		}
+
+		ul.nav-list li a:visited{
+			color: #FFF;
+		}
+
+		ul.nav-list li a:hover{
+			color: #bdc3c7;
+		}
+
+		/* banner */
+		.banner {
+			position: relative;
+			display: block;
+			min-height: 300px;
+			width: 100%;
+			background-image: url("static/images/banner.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.9;
+			top: -20px;
+			color: #fff;
+			text-align: center;
+			padding-top: 100px;
+		}
+
+		.banner-overlay {
+			position: absolute;
+			display: block;
+			height: 400px;
+			width: 100%;
+			background-color: rgb(0,184,148,0.3);
+			top: 0;
+			z-index: -100;
+		}
+		/* container */
+		.container {
+			position: relative;
+			display: block;
+			width: 1200px;
+			height: 500px;
+			margin: auto;
+			top: -40px;
+		}
+
+		/* container articles */
+		.container .articles {
+			position: relative;
+			display: block;
+			width: 70%;
+			overflow: auto;
+			background-color: #FFF;
+			border-radius: 3px;
+			padding: 40px 20px 0;
+		}
+
+		/* article */
+		.article{
+			position: relative;
+			display: block;
+			font-weight: 400;
+			margin-bottom: 60px;
+		}
+
+		/* article img */
+		.article img.article-img{
+			width: 300px;
+			float: right;
+			margin: 5px 5px 5px 40px;
+		}
+		
+		/* article span */
+		.article span{
+			font-weight: 100;
+		}
+
+		/* article title */
+		.article h2{
+			font-family: Roboto, sans-serif;
+			font-weight: 800;
+		}
+
+		/* article p */
+		.article p{
+			line-height: 2em;
+		}
+
+	</style>
+</head>
+
+<body>
+	
+	<!-- nav -->
+	<div class="nav">
+		<div class="nav-container">
+			<img src="static/images/logo.PNG" class="logo" />
+			<span class="logo-name">MOOLA</span>
+			<ul class="nav-list">
+				<li><a href="#">market</a></li>
+				<li><a href="#">investments</a></li>
+				<li><a href="#">finance</a></li>
+				<li><a href="#">getting started</a></li>
+				<li><a href="about_us.html">About us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- banner -->
+	
+	<div class="banner">
+		<h1>Things You Should Know Before Investing</h1>
+		<p>"With a good perspective on history, we can have a better understanding of the past and present, and thus a clear vision of the future."</p>
+		<span> — Carlos Slim Helu</span>
+		<div class="banner-overlay">
+		</div>
+	</div>
+	
+
+	<!-- container -->
+	<div class="container">
+		<!-- sidebar -->
+		<div>
+		</div>
+		<!-- articles -->
+		<div class="articles">
+			<div class="article">
+				<!-- by -->
+				<img src="static/images/samp.jpg" class="article-img" />
+				<span>Praesent ut dui</span>
+				<!-- title -->
+				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+				<!-- preview -->
+				<p>Nunc at rhoncus metus, eget semper ex. Donec maximus, enim euismod vehicula mollis, leo tellus commodo lacus, sit amet luctus ipsum nibh sed lectus. Nulla varius nunc ut justo laoreet, nec vulputate sapien tincidunt</p>
+				<!-- float img -->
+			</div>
+
+			<div class="article">
+				<!-- by -->
+				<img src="static/images/samp.jpg" class="article-img" />
+				<span>Praesent ut dui</span>
+				<!-- title -->
+				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+				<!-- preview -->
+				<p>Nunc at rhoncus metus, eget semper ex. Donec maximus, enim euismod vehicula mollis, leo tellus commodo lacus, sit amet luctus ipsum nibh sed lectus. Nulla varius nunc ut justo laoreet, nec vulputate sapien tincidunt</p>
+				<!-- float img -->
+			</div>
+
+			<div class="article">
+				<!-- by -->
+				<img src="static/images/samp.jpg" class="article-img" />
+				<span>Praesent ut dui</span>
+				<!-- title -->
+				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+				<!-- preview -->
+				<p>Nunc at rhoncus metus, eget semper ex. Donec maximus, enim euismod vehicula mollis, leo tellus commodo lacus, sit amet luctus ipsum nibh sed lectus. Nulla varius nunc ut justo laoreet, nec vulputate sapien tincidunt</p>
+				<!-- float img -->
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+
+
+
+</body>
+
+</html>

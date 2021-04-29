@@ -1,0 +1,111 @@
+#about-us ul {
+  list-style-type: none;
+  position: relative;
+  margin-left: 10%;
+}
+
+#about-us li {
+  display: inline;
+  margin: 0 1%;
+}
+
+.home-link {
+  text-decoration: none;
+  color: white;
+}
+.home-link:hover {
+  color: #D3D3D3;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.9;
+  object-fit: cover;
+}
+
+#about-us {
+  margin-top: 3%;
+  font-size: 0;
+}
+
+#about-us h1.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 42px;
+  color: black;
+}
+
+#about-us h1 {
+  font-weight: 400;
+}
+
+.tiles-condensed {
+  padding-left: 16%;
+}
+
+.tiles-condensed .tile , .tiles-condensed h1, .tiles-condensed p {
+  /*Don't use relative units for font-size bcs parent element is set to 0*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.tiles-condensed .column {
+  display: inline-block;
+  height: 1350px;
+  width: 25%;
+}
+
+.tiles-condensed .column:nth-child(2) {
+  vertical-align: 80px;
+}
+
+.tiles-condensed .column:nth-child(3) {
+  vertical-align: 0px;
+}
+
+.tiles-condensed .column:nth-child(4) {
+  vertical-align: 140px;
+}
+
+.tiles-condensed .tile, .tiles-condensed img, .tiles-condensed p {
+  display: block;
+  width: 100%;
+  height: 380px;
+}
+
+.tile.text {
+  box-sizing: border-box;
+  background-color: #2d3436;
+  padding: 12% 6%;
+}
+.tile.text p {
+  margin-top: 0.5em;
+  text-align: justify;
+}    
+.tile.member img {
+  object-fit: cover;
+}
+
+.avatars img:hover {
+  width: 52px;
+  object-fit: cover;
+}
+
+.container {
+  margin: auto;
+  /* background-image: url("static/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  width: 100%;
+}
