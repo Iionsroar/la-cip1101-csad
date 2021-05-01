@@ -1,0 +1,87 @@
+/* ////////////////////////////////////////////////////// */
+/* header container */
+.header {
+	position: relative;
+	display: block;
+	height: 100vh;
+
+	background-image: url("static/images/banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: white;
+}
+
+/* nav */
+.nav {
+	padding-top: 30px;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+	
+	text-align: center;
+	font-weight: 300;
+}
+
+.nav ul li {
+	margin: 0 50px;
+	display: inline-block;
+	
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+li.nav-links {
+	margin: 0 50px;
+}
+
+li.nav-links a:link, li.nav-links a:visited  {
+	text-decoration: none;
+	color: #FFF;
+}
+
+li.nav-links a:hover {
+	color: #bdc3c7;
+}
+
+/* MOON */
+li.title a:link, li.title a:visited  {
+	font-size: 2em;
+	font-family: Roboto, sans-serif;
+	text-decoration: none;
+	color: #FFF;
+}
+
+li.title a:hover {
+	color: #bdc3c7;
+}
+
+/* banner */
+.banner {
+	padding: 0 200px;
+	text-align: center;
+	font-weight: 300;
+}
+
+.banner h1{
+	margin-top: 15%;
+	margin-bottom: 0;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 4em;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+}
+
+.banner hr{
+	width: 65%;
+}
+
+.banner p {
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	/* font-size: 1em; */
+}
