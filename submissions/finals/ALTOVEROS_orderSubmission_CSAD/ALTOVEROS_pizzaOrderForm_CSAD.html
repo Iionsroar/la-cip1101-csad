@@ -2,12 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Order Form</title>
     <style type="text/css">
-        @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap")
-        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@200;400&display=swap")
+        @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@200;400&display=swap");
+
+        body {
+        	margin: 0;
+        	font-family: Oswald;
+        }
+        table {
+        	display: inline-block;
+        	vertical-align: top;
+        }
+        fieldset {
+        	margin: 5px 20px;
+        }
+        h1, h2 {
+        	font-family: Merriweather;
+        }
+        option {
+        	text-transform: capitalize;
+        }
+
+        #header {
+        	margin: 0;
+        	background-color: #f8c071;
+        	font-size: 42px;
+        	padding: 12px 0;
+        	color: #333;
+        }
+        .chkbox-radio-cell {
+        	width: 8px;
+        }
 
 
+        div.scrollmenu::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge and Firefox */
+		div.scrollmenu {
+			-ms-overflow-style: none;  /* IE and Edge */
+			scrollbar-width: none;  /* Firefox */
+		}
+        div.scrollmenu {
+        	overflow: auto;
+        	white-space: nowrap;
+        	width: 1320px;
+        	padding: 20px 0;
+        }
+        div.scrollmenu img:first-child {
+        	padding-left: 20px;
+        }
+        div.scrollmenu img {
+        	display: inline-block;
+        	width: 200px;
+     		border-radius: 5px;
+     		object-fit: cover;
+        }
+
+        thead th {
+        	text-align: left;
+        }
+        .table-form {
+        	margin-right: 60px;
+        }
+        .left {
+        	text-align: left;
+        }
+        .right {
+        	text-align: right;
+        }
+        .center {
+        	text-align: center;
+        }
+
+        .zoom {
+			transition: transform .2s; /* Animation */
+			margin: 0 auto;
+		}
+		.zoom:hover {
+			transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+			border-radius: 10px;
+		}
+
+		input[type="submit"] {
+			margin: 10px 20px;
+			padding: 15px 40px;
+			font-size: 16px;
+			background-color: #f8c071;
+			border: none;
+			font-weight: bold;
+		}
+		input[type="submit"]:hover {
+			background-color: #333;
+			color: #f8c071;
+			cursor: pointer;
+		}
     </style>
 </head>
 <body>
@@ -15,12 +107,22 @@
     <!--ALTOVEROS, LOUIS ANGELO-->
     <!--April 29, 2021-->
 
-    <h1>Food on the Line: The Store</h1>
+    <h1 id="header"><img src="ALTOVEROS_IMAGES_CSAD/logo.webp" height="75">Food on the Line!</h1>
     <form action="" method="">
+		<div class="scrollmenu">
+    		<img class="zoom" src="ALTOVEROS_IMAGES_CSAD/burger.jpg">
+    		<img class="zoom" src="ALTOVEROS_IMAGES_CSAD/pasta.jpg">
+    		<img class="zoom" src="ALTOVEROS_IMAGES_CSAD/fries.jpg">
+    		<img class="zoom" src="ALTOVEROS_IMAGES_CSAD/drinks.jpg">
+    		<img class="zoom" src="ALTOVEROS_IMAGES_CSAD/dish-1.jpg">
+    		<img class="zoom" src="ALTOVEROS_IMAGES_CSAD/dish-2.jpg">
+    		<img class="zoom" src="ALTOVEROS_IMAGES_CSAD/drinks-1.jpg">
+		</div>
+
     	<fieldset>
     		<legend><h2>Customer Information</h2></legend>
 
-    		<label for="name">Name: </label>
+    		<label for="name" width="48">Full Name: </label>
     		<input type="text" id="name" name="name"><br><br>
     		<label for="address">Address: </label>
     		<input type="text" id="address" name="address"><br><br>
@@ -32,76 +134,202 @@
     		<textarea id="location-desc" name="location-desc"></textarea><br><br>
     	</fieldset>
 
+
     	<fieldset>
     		<legend><h2>Order Form</h2></legend>
     		<h3>Burgers and Pasta</h3>
 
-    		<table>
-    			<thead><tr><th>Burger:</th></tr></thead>
+    		<div style="display: inline-block;" class="table-form">
+	    		<table id="burger-form">
+	    			<thead><tr><th>Burger:</th></tr></thead>
+	    			<tbody>
+			    		<tr>
+				    		<td class="chkbox-radio-cell"><input type="radio" id="burger-1" name="patty" value="Single Patty"></td>
+				    		<td><label for="burger-1">Single Patty</label></td>
+			    		</tr>
+			    		<tr>
+				    		<td class="chkbox-radio-cell"><input type="radio" id="burger-2" name="patty" value="Double Patty"></td>
+				    		<td><label for="burger-2">Double Patty</label></td>
+			    		</tr>
+			    		<tr>
+				    		<td class="chkbox-radio-cell"><input type="checkbox" id="burger-cheese" name="burger-cheese" value="With Cheese"></td>
+				    		<td><label for="burger-cheese">With Cheese</label></td>
+			    		</tr>
+			    		<tr>
+				    		<td class="chkbox-radio-cell"><input type="checkbox" id="burger-coleslaw" name="burger-coleslaw" value="Coleslaw"></td>
+				    		<td><label for="burger-coleslaw">Coleslaw</label></td>
+			    		</tr>
+			    		<tr>
+				    		<td class="chkbox-radio-cell"><input type="checkbox" id="burger-tomato" name="burger-tomato" value="Tomato"></td>
+				    		<td><label for="burger-tomato">Tomato</label></td>
+			    		</tr>
+			    		<tr>
+				    		<td class="chkbox-radio-cell"><input type="checkbox" id="burger-onion" name="burger-onion" value="Onion"></td>
+				    		<td><label for="burger-onion">Onion</label></td>
+			    		</tr>
+			    		<tr>
+				    		<td class="chkbox-radio-cell"><input type="checkbox" id="burger-cucumber" name="burger-cucumber" value="Cucumber"></td>
+				    		<td><label for="burger-cucumber">Cucumber</label></td>
+			    		</tr>
+			    		<tr>
+				    		<td class="chkbox-radio-cell"><input type="checkbox" id="burger-bacon" name="burger-bacon" value="Bacon"></td>
+				    		<td><label for="burger-bacon">Bacon</label></td>
+			    		</tr>
+	    			</tbody>
+	    		</table>
+	    		<table style="display: block;">
+	    			<tbody>
+	    				<tr>
+	    					<td rowspan="3">Choice of Bun:</td>
+				    		<td class="chkbox-radio-cell"><input type="radio" id="white-bun" name="bun" value="White Bun"></td>
+				    		<td><label for="white-bun">White Bun</label></td>
+	    				</tr>
+	    				<tr>
+				    		<td class="chkbox-radio-cell"><input type="radio" id="wheat-bun" name="bun" value="Wheat bun"></td>
+				    		<td><label for="wheat-bun">Wheat Bun</label></td>
+	    				</tr>
+	    			</tbody>
+	    		</table>
+	    		<table style="display: block;">
+	    			<tbody>
+	    				<tr>
+	    					<td class="chkbox-radio-cell">Quantity:</td>
+				    		<td><input type="text" id="burger-quantity" name="burger-quantity" value="1"></td>
+	    				</tr>
+	    			</tbody>
+	    		</table>
+    			
+    		</div>
+
+    		<table class="table-form">
+    			<thead><tr><th>Pasta:</th></tr></thead>
     			<tbody>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-1" name="burger-1" value="Single Patty"></td>
-			    		<td><label for="burger-1">Single Patty</label></td>
+			    		<td class="chkbox-radio-cell"><input type="radio" id="carbonara" name="pasta" value="Carbonara"></td>
+			    		<td><label for="carbonara">Carbonara</label></td>
 		    		</tr>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-2" name="burger-2" value="Double Patty"></td>
-			    		<td><label for="burger-2">Double Patty</label></td>
+			    		<td class="chkbox-radio-cell"><input type="radio" id="pesto" name="pasta" value="Pesto"></td>
+			    		<td><label for="pesto">Pesto</label></td>
 		    		</tr>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-cheese" name="burger-cheese" value="With Cheese"></td>
-			    		<td><label for="burger-cheese">With Cheese</label></td>
+			    		<td class="chkbox-radio-cell"><input type="radio" id="lasagna" name="pasta" value="lasagna"></td>
+			    		<td><label for="lasagna">Lasagna</label></td>
 		    		</tr>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-coleslaw" name="burger-coleslaw" value="Coleslaw"></td>
-			    		<td><label for="burger-coleslaw">Coleslaw</label></td>
+			    		<td class="chkbox-radio-cell"><input type="radio" id="spaghetti" name="pasta" value="Spaghetti"></td>
+			    		<td><label for="spaghetti">Spaghetti</label></td>
 		    		</tr>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-tomato" name="burger-tomato" value="Tomato"></td>
-			    		<td><label for="burger-tomato">Tomato</label></td>
+			    		<td class="chkbox-radio-cell"><input type="radio" id="butter-sauce" name="pasta" value="Browned Butter Sauce"></td>
+			    		<td><label for="butter-sauce">Browned Butter Sauce</label></td>
 		    		</tr>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-onion" name="burger-onion" value="Onion"></td>
-			    		<td><label for="burger-onion">Onion</label></td>
+			    		<td class="chkbox-radio-cell"><input type="radio" id="garlic-oil-sauce" name="pasta" value="Garlic-and-Oil Sauce"></td>
+			    		<td><label for="garlic-oil-sauce">Garlic-and-Oil Sauce</label></td>
 		    		</tr>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-cucumber" name="burger-cucumber" value="Cucumber"></td>
-			    		<td><label for="burger-cucumber">Cucumber</label></td>
+			    		<td class="chkbox-radio-cell"><input type="radio" id="salsa-sauce" name="pasta" value="Salsa Sauce"></td>
+			    		<td><label for="salsa-sauce">Salsa Sauce</label></td>
 		    		</tr>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-bacon" name="burger-bacon" value="Bacon"></td>
-			    		<td><label for="burger-bacon">Bacon</label></td>
+			    		<td class="chkbox-radio-cell"><input type="checkbox" id="extra-cheese" name="extra-cheese" value="Cheese"></td>
+			    		<td><label for="extra-cheese">Extra Cheese</label></td>
 		    		</tr>
-    			</tbody>
+		    		<tr>
+			    		<td class="chkbox-radio-cell"><input type="checkbox" id="extra-sauce" name="extra-sauce" value="Sause"></td>
+			    		<td><label for="extra-sauce">Extra Sauce</label></td>
+		    		</tr>
+		    		<tr>
+			    		<td class="chkbox-radio-cell"><input type="checkbox" id="extra-mushroom" name="extra-mushroom" value="Mushroom"></td>
+			    		<td><label for="extra-mushroom">Extra Mushrooms</label></td>
+		    		</tr>
+		    		<tr>
+			    		<td class="chkbox-radio-cell"><input type="checkbox" id="pasta-add-more" name="pasta-add-more" value="Topping"></td>
+			    		<td><label for="pasta-add-more">Add a topping: </label></td>
+			    		<td><input type="text" name="add-more-value"></td>
+		    		</tr>
+
+		    	</tbody>
+    		</table>
+
+    		<table class="table-form">
+    			<thead><tr><th>Fries:</th></tr></thead>
     			<tbody>
     				<tr>
-    					<td rowspan="3">Choice of Bun:</td>
-			    		<td><input type="radio" id="white-bun" name="white-bun" value="White Bun"></td>
-			    		<td><label for="burger-1">White Bun</label></td>
+    					<td><label for="fries-size">Size:</label></td>
+						<td>
+							<select id="fries-size" name="fries-size">
+							    <option value="small">small</option>
+							    <option value="medium">medium</option>
+							    <option value="large">large</option>
+							</select>
+						</td>
     				</tr>
     				<tr>
-			    		<td><input type="radio" id="wheat-bun" name="wheat-bun" value="Wheat bun"></td>
-			    		<td><label for="wheat-bun">Wheat Bun</label></td>
+    					<td><label for="fries-size">Flavor:</label></td>
+						<td>
+							<select id="fries-flavor" name="fries-flavor">
+							    <option value="bbq">BBQ</option>
+							    <option value="cheese">Cheese</option>
+							    <option value="sour-cream">Sour Cream</option>
+							</select>
+						</td>
     				</tr>
-    			</tbody>
-    			<tbody>
     				<tr>
-    					<td>Quantity:</td>
+    					<td class="chkbox-radio-cell">Quantity:</td>
 			    		<td><input type="text" id="burger-quantity" name="burger-quantity" value="1"></td>
     				</tr>
     			</tbody>
     		</table>
 
-    		<table>
-    			<thead><tr><th>Pasta:</th></tr></thead>
+    		<table class="table-form">
+    			<thead><tr><th>Drinks:</th></tr></thead>
     			<tbody>
 		    		<tr>
-			    		<td><input type="checkbox" id="burger-1" name="burger-1" value="Single Patty"></td>
-			    		<td><label for="burger-1">Single Patty</label></td>
+			    		<td><label for="kind-of-drink">Kind of drink: </label></td>
+			    		<td><input type="text" id="kind-of-drink" name="kind-of-drink"></td>
 		    		</tr>
-		    	</tbody>
+    				<tr>
+    					<td><label for="drink-size">Size:</label></td>
+						<td>
+							<select id="drink-size" name="drink-size">
+							    <option value="small">small</option>
+							    <option value="medium">medium</option>
+							    <option value="large">large</option>
+							</select>
+						</td>    					
+    				</tr>
+    				<tr>
+    					<td class="chkbox-radio-cell">Quantity:</td>
+			    		<td><input type="text" id="burger-quantity" name="burger-quantity" value="1"></td>
+    				</tr>
+    			</tbody>
     		</table>
-
     	</fieldset>
+
+    	<fieldset>
+    		<legend><h2>Delivery and Feedback</h2></legend>
+    		<table>
+    			<tbody>
+    				<tr>
+    					<td><label for="claim-method">Claiming Method:</label></td>
+						<td>
+							<select id="claim-method" name="claim-method">
+							    <option value="delivery">delivery</option>
+							    <option value="pick-up">pick-up</option>
+							</select>
+						</td>    					
+    				</tr>
+    				<tr>
+    					<td><label for="feedback">Feedback:</label></td>
+    					<td><textarea></textarea></td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</fieldset>
+
+    	<input type="submit" name="submit" value="Submit">
     </form>
 
 
